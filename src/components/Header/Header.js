@@ -13,7 +13,7 @@ function Header() {
             <nav className="navbar">
                 <div className="header-nav">
                     <div>
-                        <a href="#" ><img src={PremierLeague} alt="laliga" /></a>
+                        <a href="/" ><img src={PremierLeague} alt="laliga" /></a>
                     </div>
                     <div>
                         <p>Premier League</p>
@@ -21,7 +21,7 @@ function Header() {
                 </div>
                 <div className="header-nav">
                     <div>
-                        <a href="#" ><img src={LaLiga} alt="laliga" /></a>
+                        <a href="/" ><img src={LaLiga} alt="laliga" /></a>
                     </div>
                     <div>
                         <p>La Liga</p>
@@ -30,7 +30,7 @@ function Header() {
                 
                 <div className="header-nav">
                     <div>
-                        <a href="#" ><img src={Bundesliga} alt="laliga" /></a>
+                        <a href="/" ><img src={Bundesliga} alt="laliga" /></a>
                     </div>
                     <div>
                         <p>Bundesliga</p>
@@ -38,7 +38,7 @@ function Header() {
                 </div>
                 <div className="header-nav">
                     <div>
-                        <a href="#" ><img src={Liga1} alt="laliga" /></a>
+                        <a href="/" ><img src={Liga1} alt="laliga" /></a>
                     </div>
                     <div>
                         <p>Liga 1</p>
@@ -46,7 +46,7 @@ function Header() {
                 </div>
                 <div className="header-nav">
                     <div>
-                        <a href="#" ><img src={SeriaA} alt="laliga" /></a>
+                        <a href="/" ><img src={SeriaA} alt="laliga" /></a>
                     </div>
                     <div>
                         <p>Seria A</p>
@@ -54,7 +54,7 @@ function Header() {
                 </div>
                 <div className="header-nav">
                     <div>
-                        <a href="#" ><img src={Row} alt="laliga" /></a>
+                        <a href="/" ><img src={Row} alt="laliga" /></a>
                     </div>
                     <div>
                         <p>Rest of World</p>
