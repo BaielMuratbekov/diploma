@@ -92,3 +92,12 @@
     font-size: small;
     text-transform: uppercase;
 }
+.he-title{
+    margin: 2rem 0;
+    color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 3.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

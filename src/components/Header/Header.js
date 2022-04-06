@@ -61,6 +61,9 @@ function Header() {
                     </div>
                 </div>
             </nav>
+            <div className="he-title">
+                NOW TRENDING
+            </div>
             <section className="section">
                 <div className="header__left">
                     <h1 >Spring looks.</h1>
