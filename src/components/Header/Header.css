@@ -36,7 +36,7 @@ img {
 .header-nav p {
     padding: 0;
     padding-top: 10px;
-    margin: 0 ;
+    margin: 0;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5;
@@ -45,6 +45,6 @@ img {
 
 }
 
-.header-nav a img:hover{
+.header-nav a img:hover {
     border: none;
 }
