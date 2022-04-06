@@ -5,7 +5,7 @@ import Bundesliga from "../../assets/Bundesliga.webp"
 import Liga1 from "../../assets/Liga1.webp"
 import SeriaA from "../../assets/SeriaA.png"
 import Row from "../../assets/Row.webp"
-
+import RealMadrid from "../../assets/real_madrid.jpg"
 function Header() {
     return (
         <header className="Header">
@@ -61,6 +61,16 @@ function Header() {
                     </div>
                 </div>
             </nav>
+            <section className="section">
+                <div className="header__left">
+                    <h1 >Spring looks.</h1>
+                    <span>Upgrate your collection.</span>
+                    <a href="/" className="btn">shop now</a>
+                </div>
+                <div className="header__right">
+                    <img src={RealMadrid} alt="realmadrid"/>
+                </div>
+            </section>
         </header>
     )
 }

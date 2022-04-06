@@ -9,7 +9,7 @@
     font-size: 1.5rem;
 }
 
-img {
+.header-nav img {
     width: 4.375rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,4 +47,48 @@ img {
 
 .header-nav a img:hover {
     border: none;
+}
+
+.section {
+    margin-top: 3rem;
+    width: 100%;
+    background-color: #f69601;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section img {
+    width: 450px;
+    margin: 2rem;
+}
+
+.section .header__left {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 8rem;
+    margin-top: 250px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.section .header__left h1 {
+    font-size: 3rem;
+}
+
+.section .header__left span {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.btn {
+    margin-top: 100px;
+    width: 100px;
+    padding: .7rem;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    font-size: small;
+    text-transform: uppercase;
 }
