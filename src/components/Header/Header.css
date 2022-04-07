@@ -16,6 +16,7 @@
     border: solid 0.7rem rgb(255, 255, 255);
     box-shadow: 1px 1px 4px 1px #676565;
     border-radius: 50%;
+    transition: border .2s ease;
 }
 
 .navbar {
@@ -91,6 +92,11 @@
     text-align: center;
     font-size: small;
     text-transform: uppercase;
+    transition: all .2s es;
+}
+.btn:hover{
+    color:#000;
+    background-color: #fff;
 }
 .he-title{
     margin: 2rem 0;

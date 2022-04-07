@@ -5,13 +5,27 @@
 body {
   margin: 0;
 }
-a{
+button{
+  cursor: pointer;
+}
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+
+a {
   text-decoration: none;
   color: inherit;
 }
-ul{
+p{
+  padding: 0;
+  margin: 0;
+}
+
+ul {
   list-style: none;
 }
-li{
+
+li {
   display: inline-block;
 }

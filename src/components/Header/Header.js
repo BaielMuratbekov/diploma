@@ -6,6 +6,7 @@ import Liga1 from "../../assets/Liga1.webp"
 import SeriaA from "../../assets/SeriaA.png"
 import Row from "../../assets/Row.webp"
 import RealMadrid from "../../assets/real_madrid.jpg"
+
 function Header() {
     return (
         <header className="Header">
@@ -74,6 +75,7 @@ function Header() {
                     <img src={RealMadrid} alt="realmadrid"/>
                 </div>
             </section>
+            
         </header>
     )
 }
