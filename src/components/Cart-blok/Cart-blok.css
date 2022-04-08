@@ -1,0 +1,17 @@
+.Cart-blok {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cart-blok__price {
+    margin-left: 15px;
+    margin-right:2rem;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cart-blok__icons {
+    cursor: pointer;
+    position: relative;
+}
