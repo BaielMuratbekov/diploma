@@ -1,0 +1,14 @@
+Footer {
+    background-color: #e4e4e4;
+    padding: 1rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+
+}
+
+.Footer span {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}

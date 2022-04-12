@@ -1,5 +1,6 @@
 import React from 'react'
 import { FootballItem } from '../../Football/FootballItem'
+import { Nav } from '../../Header/Nav'
 import "./Home-page.css"
 
 export const HomePage = () => {
@@ -64,9 +65,13 @@ export const HomePage = () => {
     return (
         <div className='container'>
             <div className='Home-page'>
-                {FOOTBALLS.map(football =>
-                    <FootballItem football={football}
-                        key={football.id} />)}
+                <Nav/>
+                <div className='Home-page__item'>
+                    {FOOTBALLS.map(football =>
+                        <FootballItem football={football}
+                            key={football.id} />)}
+                </div>
+                
             </div>
         </div>
     )

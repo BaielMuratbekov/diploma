@@ -5,16 +5,15 @@
     position: relative;
     box-shadow: 4px 3px 5px 1px rgb(197, 196, 196);
     transition: all .4s ease-in;
+    margin-left: 50px;
+    margin-bottom: 50px;
 }
 
 .FootballItem:hover {
     box-shadow: -4px -3px 5px 1px rgb(197, 196, 196);
 }
 
-.FootballItem:not(:last-child) {
-    margin-bottom: 30px;
-    margin-right: 50px;
-}
+
 
 .footballitem__title {
     font-size: 18px;
