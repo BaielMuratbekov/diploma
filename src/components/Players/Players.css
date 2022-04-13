@@ -1,0 +1,16 @@
+.Players__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Players__title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.Players__img {
+    display: flex;
+    justify-content: center;
+}
