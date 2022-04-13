@@ -1,0 +1,38 @@
+.MainHeader {
+    display: flex;
+    justify-content: space-between;
+    background-color: #cddef0;
+    margin-bottom: 2rem;
+}
+
+.MainHeader__left {
+    display: flex;
+    flex-direction: column;
+    margin-top: 6rem;
+    margin-left: 4rem;
+}
+
+.MainHeader__left h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.MainHeader__link{
+    margin-top: 9rem;
+    background-color: black;
+    color: #fff;
+    text-transform: uppercase;
+    padding: .5rem 0;
+    text-align: center;
+    width: 120px;
+}
+.MainHeader__right img {
+    width: 500px;
+    border: 10px solid white;
+    padding: .5rem;
+}
+
+.MainHeader__right {
+
+    padding: 2rem 4rem;
+}

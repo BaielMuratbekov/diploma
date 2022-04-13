@@ -29,3 +29,10 @@
     margin-top: 10px;
     font-size: 14px;
 }
+
+.FootballItem img {
+
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
