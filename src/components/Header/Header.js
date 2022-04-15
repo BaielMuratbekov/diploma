@@ -8,14 +8,16 @@ export const Header = () => {
             <div className='wrapper'>
                 <Link to="/" className='header__title'>Footbal Store</Link>
             </div>
-            <div className='wrapper'>
+            <div className='wrapper '>
+
                 <Link to="/" className='header__link '>Home</Link>
                 <Link to="/about" className='header__link'>About Store</Link>
                 <Link to="/player" className='header__link'>Players</Link>
                 <Link to="/sale" className='header__link activeRed'>Sale UP To -50%</Link>
+
             </div>
             <div className='wrapper header__cart-btn'>
-                <CartBlok/>
+                <CartBlok />
             </div>
         </div>
     )

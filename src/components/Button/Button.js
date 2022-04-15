@@ -11,6 +11,7 @@ export const Button = ({
         'btn': true,
         'btn--secondary': type === 'secondary',
         'btn--primary': type === 'primary',
+        'btn--fff': type === 'fff',
         'btn--small': size === 's',
         'btn--medium': size === 'm',
     })

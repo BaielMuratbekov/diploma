@@ -1,0 +1,23 @@
+.Cart-menu {
+    position: absolute;
+    top: 30px;
+    left: -300px;
+    background-color: #e4e4e4;
+    box-shadow: 1px 1px 5px 1px black;
+    width: 400px;
+    padding: 10px 20px;
+    z-index: 2;
+    border-radius: 15px;
+}
+
+.Cart-menu__arrange {
+    margin-top: 20px;
+    padding: 20px 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.Cart-menu__total-price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
