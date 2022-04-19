@@ -66,6 +66,9 @@ export const HomePage = () => {
 
         <div className='Home-page'>
             <MainHeader />
+            <div className='Home-page__title'> 
+                All goods
+            </div>
             <div className='container'>
                 <div className='Home-page__item'>
 

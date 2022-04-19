@@ -8,8 +8,8 @@
 .MainHeader__left {
     display: flex;
     flex-direction: column;
-    margin-top: 6rem;
-    margin-left: 4rem;
+    margin-top: 8rem;
+    margin-left: 10rem;
 }
 
 .MainHeader__left h1 {
@@ -17,8 +17,8 @@
     margin: 0;
 }
 
-.MainHeader__link{
-    margin-top: 9rem;
+.MainHeader__link {
+    margin-top: 6rem;
     background-color: black;
     color: #fff;
     text-transform: uppercase;
@@ -26,6 +26,7 @@
     text-align: center;
     width: 120px;
 }
+
 .MainHeader__right img {
     width: 500px;
     border: 10px solid white;

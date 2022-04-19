@@ -1,0 +1,20 @@
+.NavItem a {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom: 3px solid transparent;
+    transition: all .3s ease-in;
+}
+
+.NavItem a.active {
+    border-color: rgb(27, 27, 27);
+}
+
+.NavItem a:hover {
+    color: #fff;
+    background-color: #333;
+    border-color: rgb(255, 255, 255);
+}

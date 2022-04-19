@@ -1,0 +1,31 @@
+
+.NavOne {
+    background-color: #e4e4e4;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper .Users {
+    margin-right: 10px;
+}
+
+.NavOne ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
