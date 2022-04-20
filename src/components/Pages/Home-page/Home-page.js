@@ -1,5 +1,6 @@
 import React from 'react'
 import { FootballItem } from '../../Football/FootballItem'
+import { Header } from '../../Header/Header'
 import { MainHeader } from '../../MainHeader/MainHeader'
 import "./Home-page.css"
 
@@ -65,6 +66,14 @@ export const HomePage = () => {
     return (
 
         <div className='Home-page'>
+            <>
+                <Header
+                    title="Football Store."
+                    image='/assets/header.jpeg'>
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati quasi reiciendis, facere quis, quibusdam sint optio, voluptatibus corrupti consequatur sed qui itaque cupiditate. Incidunt quibusdam dicta blanditiis dolorum in?
+                </Header>
+            </>
             <MainHeader />
             <div className='Home-page__title'> 
                 All goods

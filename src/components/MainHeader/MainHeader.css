@@ -31,6 +31,8 @@
     width: 500px;
     border: 10px solid white;
     padding: .5rem;
+    object-fit: cover;
+    object-position: center;
 }
 
 .MainHeader__right {
