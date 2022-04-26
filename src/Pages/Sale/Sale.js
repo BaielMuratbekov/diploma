@@ -1,7 +1,7 @@
 import React from 'react'
 import './Sale.css'
-import { MainHeader } from '../../MainHeader/MainHeader'
-import { Header } from '../../Header/Header'
+import { MainHeader } from '../../components/MainHeader/MainHeader'
+import { Header } from '../../components/Header/Header'
 
 export const Sale = () => {
   return (

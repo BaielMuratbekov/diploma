@@ -1,7 +1,4 @@
-.Home-page__item{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .Home-page__title{
     margin: 2rem 0;
     text-transform: uppercase;
