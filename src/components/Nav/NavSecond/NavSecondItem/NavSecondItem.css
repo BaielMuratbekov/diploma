@@ -1,0 +1,10 @@
+.NavLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.4375rem;
+    height: 4.4375rem;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0.0625rem 0.0625rem 0.25rem #979798;
+}

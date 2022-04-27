@@ -7,7 +7,7 @@ export const NavSecond = () => {
         <div className='NavSecond'>
             <div className='NavSecond__title'>Shop Your Favourite League</div>
 
-            <ul>
+            <ul className='NavSecond__item'>
                 <li>
                     <NavSecondItem url='/'><img src='/assets/PremierLeague.webp' alt='PremierLeague' /></NavSecondItem>
                     <p>PremierLeague</p>

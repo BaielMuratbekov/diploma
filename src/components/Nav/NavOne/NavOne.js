@@ -16,7 +16,7 @@ export const NavOne = () => {
                 <NavItem url="/player" >Players</NavItem>
                 <NavItem url="/sale" >Sale UP To -50%</NavItem>
             </ul>
-            <div className='logo wrapper'>
+            <div className=' wrapper'>
                 <BiUserCircle className='Users' size={30} />
                 <CartBlok />
             </div>
