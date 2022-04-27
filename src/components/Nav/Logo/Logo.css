@@ -3,3 +3,10 @@
     font-weight: bold;
     margin-left: 4rem;
 }
+
+@media (max-width:500px) {
+    .Logo {
+        margin-right: 2rem;
+
+    }
+}

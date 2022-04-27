@@ -8,6 +8,7 @@ import { NavToggle } from '../NavToggle/NavToggle'
 export const NavOne = () => {
     return (
         <nav className="NavOne">
+            <NavToggle />
             <Logo />
             <ul>
                 <NavItem url="/">Home</NavItem>
@@ -19,7 +20,7 @@ export const NavOne = () => {
                 <BiUserCircle className='Users' size={30} />
                 <CartBlok />
             </div>
-            <NavToggle/>
+            
         </nav>
 
     )

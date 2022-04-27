@@ -38,5 +38,6 @@
 @media (max-width:500px) {
     .NavOne .logo {
         display: none;
+
     }
 }
