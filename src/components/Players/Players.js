@@ -8,8 +8,10 @@ export const Players=()=> {
       
       <>
         <Header
-          title="Players."
-          image='/assets/players.webp'>
+          title="Players"
+          image1='/assets/players1.jpg'
+          image2='/assets/players2.jpg'
+          image3='/assets/players3.jpg'>
 
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati quasi reiciendis, facere quis, quibusdam sint optio, voluptatibus corrupti consequatur sed qui itaque cupiditate. Incidunt quibusdam dicta blanditiis dolorum in?
         </Header>

@@ -33,6 +33,10 @@ export const NavSecond = () => {
                     <NavSecondItem url='/'><img src='/assets/Row.webp' alt='ROW' /></NavSecondItem>
                     <p>Rast of World</p>
                 </li>
+                <li>
+                    <NavSecondItem url='/'><img src='/assets/mir.webp' alt='International' /></NavSecondItem>
+                    <p>International</p>
+                </li>
             </ul>
         </div>
     )

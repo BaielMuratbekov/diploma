@@ -4,9 +4,12 @@ function NotFound() {
     return (
         <>
             <Header
-                title="Page not found"
-                image="/assets/hero.jpg">
-                Maybe the page you are looking for was moved or deleted.
+                title="Football Store."
+                image1='/assets/header.jpeg'
+                image2='/assets/aboutfootball.jpg'
+                image3='/assets/dsc.jpg'>
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati quasi reiciendis, facere quis, quibusdam sint optio, voluptatibus corrupti consequatur sed qui itaque cupiditate. Incidunt quibusdam dicta blanditiis dolorum in?
             </Header>
         </>
     );
