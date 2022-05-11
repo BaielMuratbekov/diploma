@@ -3,14 +3,14 @@
     border-radius: 15px;
     cursor: pointer;
     position: relative;
-    box-shadow: 4px 3px 5px 1px rgb(197, 196, 196);
+    box-shadow: 4px 3px 5px 1px rgb(11, 1, 63);
     transition: all .4s ease-in;
     margin-left: 50px;
     margin-bottom: 50px;
 }
 
 .FootballItem:hover {
-    box-shadow: -4px -3px 5px 1px rgb(197, 196, 196);
+    box-shadow: -4px -3px 5px 1px rgb(11, 1, 63);
 }
 
 

@@ -26,7 +26,7 @@ export const FootballByu = ({ football }) => {
                 type={isItemInCart ? "secondary" : "primary"}
                 onClick={handleClick}
             >
-                {isItemInCart ? <BsFillCartXFill size={23} color='tomato' /> : <BsFillCartPlusFill color='rgb(25, 2, 99)' size={23}/>}
+                {isItemInCart ? <BsFillCartXFill size={23} color='tomato' /> : <BsFillCartPlusFill color='rgb(255, 255, 255)' size={23}/>}
             </Button>
 
         </div>

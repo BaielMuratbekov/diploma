@@ -2,8 +2,8 @@
     position: absolute;
     top: 30px;
     left: -300px;
-    background-color: #e4e4e4;
-    box-shadow: 1px 1px 5px 1px black;
+    background-color: #212121;
+    box-shadow: 1px 1px 5px 1px rgb(10, 11, 42);
     width: 400px;
     padding: 10px 20px;
     z-index: 2;

@@ -1,16 +1,4 @@
-.NavOne {
-    background-color: #e4e4e4;
-    color: rgb(0, 0, 0);
-    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-}
+
 
 .wrapper {
     display: flex;
@@ -19,19 +7,19 @@
 }
 
 .wrapper .Users {
-    margin-right: 10px;
+    margin:0 10px 0 5rem;
 }
 
-.NavOne ul {
+.NavOne{
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
 
-@media (max-width:919px) {
-    .NavOne ul {
-        display: none;
+@media (max-width: 620px) {
+    .NavOne {
+        flex-direction: column;
+        margin: 1rem 0;
     }
 }
-

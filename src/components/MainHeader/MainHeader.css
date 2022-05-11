@@ -4,6 +4,7 @@
     background-color: #cddef0;
     margin-bottom: 2rem;
     flex-direction: row-reverse;
+    margin-top: 50px;
 }
 
 .MainHeader__left {
@@ -35,6 +36,7 @@
     padding: .5rem;
     object-fit: cover;
     object-position: center;
+    
 }
 
 .MainHeader__right {

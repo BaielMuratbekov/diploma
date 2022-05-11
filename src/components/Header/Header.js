@@ -5,7 +5,7 @@ import './Header.css'
 export const Header= ({ image1, image2, image3, title, children })=> {
     return (
         < Carousel className='Carousel' >
-            <Carousel.Item interval={1000}>
+            <Carousel.Item interval={500}>
                 <img
                     className="d-block w-100"
                     src={image1}
@@ -27,7 +27,7 @@ export const Header= ({ image1, image2, image3, title, children })=> {
                     <p>{children}</p>
                 </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            <Carousel.Item interval={500}>
                 <img
                     className="d-block w-100"
                     src={image3}

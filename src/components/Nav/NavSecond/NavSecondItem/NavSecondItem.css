@@ -5,6 +5,10 @@
     width: 4.4375rem;
     height: 4.4375rem;
     border-radius: 50%;
-    background-color: #fff;
-    box-shadow: 0.0625rem 0.0625rem 0.25rem #979798;
+    background-color: rgb(2, 1, 21);
+    box-shadow: 0.0625rem 0.0625rem 0.25rem rgb(5, 1, 70);
+}
+
+.NavLink:hover {
+    background-color: rgb(1, 0, 14);
 }
