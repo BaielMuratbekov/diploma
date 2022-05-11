@@ -1,8 +1,6 @@
 import {NavOne} from "../Nav/NavOne/NavOne";
 import {Logo} from "../Nav/Logo/Logo";
 import classes from "./Drawer.module.css";
-import Toolbar from "../Toolbar/Toolbar";
-import { NavItem } from "../Nav/NavItem/NavItem";
 
 function Drawer({ open, toggle }) {
     const classNames = [classes.Drawer];
