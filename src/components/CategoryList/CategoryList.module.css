@@ -1,0 +1,13 @@
+.CategoryList{
+    margin-top: 40px;
+}
+.CategoryListItem {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: center;
+}
+.CategoryListTitle{
+    text-align: center;
+    font-size: 1.5rem;
+}

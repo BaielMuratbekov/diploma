@@ -1,24 +1,17 @@
+
 import { useParams } from "react-router-dom";
-import { getProduct } from "../data/products";
 import { Header } from "../components/Header/Header";
+import { getProduct } from "../data/products";
 
-function Product() {
-    const params = useParams();
-    const football = getProduct(params.id)
+function Product(props) {
+  console.log(props)
 
-    if (!football) {
-        return null;
-    }
 
-    return (
-        <>
-            <Header
-                title={football.title}
-                image={football.image}>
-                {football.description}
-            </Header>
-        </>
-    );
+  return (
+    <div>
+      
+    </div>
+  );
 }
 
 export default Product;

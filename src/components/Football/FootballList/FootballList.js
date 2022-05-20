@@ -1,15 +1,14 @@
 import classes from "./FootballList.module.css";
 import { FootballItem } from "../FootballItem";
 
-function FootballList({ footballs }) {
-    console.log(footballs);
+function FootballList({ products }) {
     
-    const footballItems = footballs.map(football => (
-        <FootballItem key={football.id} football={football} />
+    const productItems = products.map(product => (
+        <FootballItem key={product.productId} product={product} />
     ));
     return (
         <div className={classes.FootballList}>
-            {footballItems}
+            {productItems}
         </div>
     );
 }

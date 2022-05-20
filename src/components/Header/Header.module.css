@@ -1,0 +1,30 @@
+.Header {
+    min-height: 70vh;
+    background-color: #010113;
+    display: flex;
+    margin-top: 3rem;
+    
+}
+.Header__left{
+    width: 50%;
+}
+.Header__left h1{
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.Header__left h1,p{
+    margin: 2rem 0 0 4rem;
+    max-width: 400px;
+}
+.Header__right{
+    max-width: 50%;
+}
+.Header__right img{
+    margin: 1rem;
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+
+}

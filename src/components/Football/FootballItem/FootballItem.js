@@ -3,14 +3,14 @@ import "./FootballItem.css"
 import { FootballByu } from '../Football-byu';
 import { FootballCover } from '../Football-cover';
 import { Link } from 'react-router-dom';
-export const FootballItem = ({ football }) => {
+export const FootballItem = ({ product  }) => {
     return (
 
         <div className='FootballItem'>
-            <FootballCover image={football.image} />
+            <FootballCover image={product.image} />
             <div className='footballitem__detalis'>
-                <Link to={"/" + football.id} className='footballitem__title'>{football.title}</Link>
-                <div className='footballitem__buy'><FootballByu football={football}/></div>
+                <Link to={"/" + product.productId} className='footballitem__title'>{product.title}</Link>
+                <div className='footballitem__buy'><FootballByu product={product}/></div>
             </div>
         </div>
 

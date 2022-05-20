@@ -6,22 +6,22 @@ import "./Football-byu.css"
 import { BsFillCartXFill } from 'react-icons/bs'
 import { BsFillCartPlusFill } from 'react-icons/bs'
 
-export const FootballByu = ({ football }) => {
+export const FootballByu = ({ product }) => {
     const dispatch = useDispatch();
     const items = useSelector((state) => state.cart.itemsInCart);
-    const isItemInCart = items.some((item) => item.id === football.id);
+    const isItemInCart = items.some((item) => item.productId === product.productId);
     const handleClick = (e) => {
         e.stopPropagation();
         if (isItemInCart) {
-            dispatch(deletItemFromCart(football.id));
+            dispatch(deletItemFromCart(product.productId));
         } else {
-            dispatch(setItemInCart(football));
+            dispatch(setItemInCart(product));
         }
     };
 
     return (
         <div className='Football-byu'>
-            <span className='football-byu__price'>{football.price} сом.</span>
+            <span className='football-byu__price'>{product.price} сом.</span>
             <Button
                 type={isItemInCart ? "secondary" : "primary"}
                 onClick={handleClick}

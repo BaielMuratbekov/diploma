@@ -1,0 +1,45 @@
+.Category{
+    margin: 3
+    0px 0;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.CategoryInfo{
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 1rem 0.5rem 0.3125rem;
+    width: 100%;
+    white-space: nowrap;
+}
+.CategoryItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0.3125rem;
+}
+
+.CategoryLink img {
+    width: 51px;
+    border-radius: 50%;
+}
+.CategoryLink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.4375rem;
+    height: 4.4375rem;
+    border-radius: 50%;
+    background-color: rgb(2, 1, 21);
+    box-shadow: 0.0625rem 0.0625rem 0.25rem rgb(5, 1, 70);
+}
+.CategoryLink:hover {
+    background-color: rgb(1, 0, 14);
+}
+.CategoryTitle{
+    padding-top: 0.5rem;
+    margin: 0;
+}
