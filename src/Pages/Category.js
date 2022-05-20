@@ -15,7 +15,7 @@ function Category() {
   return (
     <div>
       <>
-        <Header image={category.image} title={category.title}>{category.description}</Header>
+        <Header image={category.headerimage} title={category.title}>{category.description}</Header>
       </>
       <div className="container">
         <FootballList products={getProducts(category.categoryId)} />
