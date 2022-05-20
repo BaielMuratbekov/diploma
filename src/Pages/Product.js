@@ -1,16 +1,23 @@
-
 import { useParams } from "react-router-dom";
-import { Header } from "../components/Header/Header";
 import { getProduct } from "../data/products";
+import {Header} from '../components/Header/Header'
 
-function Product(props) {
-  console.log(props)
+function Product() {
+  const params = useParams();
+  const product = getProduct(params.productId);
 
+  if (!product) {
+    return null;
+  }
 
   return (
-    <div>
-      
-    </div>
+    <>
+      <Header
+        title={product.title}
+        image={product.image}>
+        {product.description}
+      </Header>
+    </>
   );
 }
 
