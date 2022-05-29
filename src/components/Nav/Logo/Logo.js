@@ -1,9 +1,11 @@
 import "./Logo.css";
-import React from 'react'
+import React from "react";
 
 export const Logo = () => {
-    return (
-        <div className="Logo">Footbal Store</div>
-    );
-}
-
+  return (
+    <>
+      <span className="logo__respon">FStore</span>
+      <div className="Logo">Footbal Store</div>
+    </>
+  );
+};

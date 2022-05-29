@@ -22,7 +22,7 @@ export const CartMenu = ({ onClick }) => {
                 <div className="Cart-menu__arrange">
                     <div className="Cart-menu__total-price">
                         <span>Итого:</span>
-                        <span>{calcTotalPrice(items)} руб.</span>
+                        <span>{calcTotalPrice(items)} сом.</span>
                     </div>
                     <Button type='fff' size="m" onClick={onClick}>
                         Оформить заказ

@@ -3,10 +3,18 @@
     font-weight: bold;
     margin-left: 4rem;
 }
+.logo__respon{
+    display: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
-@media (max-width:500px) {
-    .Logo {
-        margin-right: 2rem;
+@media (max-width:410px) {
+    .Logo{
+        display: none;
+    }
+    .logo__respon {
+        display: block;
 
     }
 }
