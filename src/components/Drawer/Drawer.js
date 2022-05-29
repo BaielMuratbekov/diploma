@@ -1,4 +1,5 @@
-import {NavOne} from "../Nav/NavOne/NavOne";
+
+import { Nav } from "../Nav/Nav";
 import {Logo} from "../Nav/Logo/Logo";
 import classes from "./Drawer.module.css";
 
@@ -13,7 +14,7 @@ function Drawer({ open, toggle }) {
             <div onClick={toggle} className={classes.backdrop}></div>
             <div className={classes.content}>
                 <Logo />
-                <NavOne/>
+                <Nav/>
             </div>
         </div>
     );
