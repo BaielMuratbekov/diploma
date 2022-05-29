@@ -7,34 +7,30 @@ export const PlayersHeader = () => {
       <div className="PlayersHeader">
         <div className="PlayersHeader__item">
           <Link to="/categories/premierliga">
-            <img src="/assets/ronaldo.webp" alt="ronaldo" />
+            <img src="/assets/ronaldocr7.png" alt="ronaldo" />
           </Link>
         </div>
         <div className="PlayersHeader__item">
           <Link to="/categories/laliga">
-            <img src="/assets/benzema.jpg" alt="ronaldo" />
+            <img src="/assets/MARCELO.png" alt="ronaldo" />
           </Link>
         </div>
         <div className="PlayersHeader__item">
           <Link to="/categories/seriaA">
-            <img src="/assets/dibala.jpg" alt="ronaldo" />
+            <img src="/assets/nopoli.png" alt="ronaldo" />
           </Link>
         </div>
         <div className="PlayersHeader__item">
           <Link to="/categories/bundesliga">
-            <img src="/assets/images.jpg" alt="ronaldo" />
+            <img src="/assets/bavaria.png" alt="ronaldo" />
           </Link>
         </div>
         <div className="PlayersHeader__item">
           <Link to="/categories/liga1">
-            <img src="/assets/mbappe.jpg" alt="ronaldo" />
+            <img src="/assets/mbappe.png" alt="ronaldo" />
           </Link>
         </div>
-        <div className="PlayersHeader__item">
-          <Link to="/categories/restofworld">
-            <img src="/assets/kross.jpg" alt="ronaldo" />
-          </Link>
-        </div>
+       
       </div>
     </div>
   );
