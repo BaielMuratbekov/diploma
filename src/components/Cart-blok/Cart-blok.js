@@ -20,7 +20,9 @@ export const CartBlok = () => {
                 className="cart-icon"
                 onClick={() => setIsCartMenuVisible(!isCartMenuVisible)}
             />
-            
+            {totalPrice > 0 ? (
+                <span className="total-price">{totalPrice} сом.</span>
+            ) : null}
             {isCartMenuVisible && <CartMenu onClick={() => null} />}
         </div>
     );
