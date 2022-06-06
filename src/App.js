@@ -23,7 +23,7 @@ function App() {
               <Route path="/sale" element={<Sale />} />
               <Route path="/player" element={<Player />} />
               <Route path="/products" element={<Products />} />
-              <Route path="/products/:productId" element={<Product />} />
+              <Route path=":productId" element={<Product />} />
               <Route path="/categories" element={<Categories />} />
               <Route path="/categories/:categoryId" element={<Category />} />
               <Route path="*" element={<NotFound />} />

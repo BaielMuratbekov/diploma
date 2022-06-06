@@ -5,7 +5,7 @@ function FootballList({ products }) {
     
     const productItems = products.map(product => (
         <FootballItem key={product.productId} product={product} />
-    ));
+      ));
     return (
         <div className={classes.FootballList}>
             {productItems}

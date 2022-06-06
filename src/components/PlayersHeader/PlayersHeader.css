@@ -14,4 +14,8 @@
 .PlayersHeader__item img {
     height: 190px;
     border-radius: 10px;
+    transition: transform .2s;
+}
+.PlayersHeader__item img:hover{
+    transform: scale(1.2);
 }

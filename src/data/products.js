@@ -117,3 +117,4 @@ export function getProduct(productId) {
     products.findIndex((product) => product.productId === productId)
   ];
 }
+

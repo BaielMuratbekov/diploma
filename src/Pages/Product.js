@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 function Product() {
   const params = useParams();
   const product = getProduct(params.productId);
-
+  
   if (!product) {
     return null;
   }
