@@ -8,10 +8,11 @@ import { NavOne } from "../Nav/NavOne/NavOne";
 function Toolbar({ toggleDrawer }) {
   return (
     <nav className={classes.Toolbar}>
-      <NavToggle callback={toggleDrawer} />
+      
       <Logo />
       <Nav/>
       <NavOne/>
+      <NavToggle callback={toggleDrawer} />
     </nav>
   );
 }

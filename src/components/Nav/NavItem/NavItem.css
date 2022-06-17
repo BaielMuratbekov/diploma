@@ -1,13 +1,16 @@
 .NavItem a {
-    display: block;
+    display: inline-block;
     padding: 1rem 1.5rem;
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 600;
     border-bottom: 3px solid transparent;
     transition: all .3s ease-in;
+    
 }
-
+    li{
+        display: inline-block;
+    }
 .NavItem a.active {
     border-color: rgb(251, 251, 251);
 }
@@ -18,9 +21,8 @@
     border-color: rgb(255, 255, 255);
 }
 
-@media (max-width: 620px) {
-    .NavItem a {
-        border-bottom: none;
-        border-right: 5px solid transparent;
+@media (max-width: 980px) {
+    li{
+        display: block;
     }
 }
