@@ -17,8 +17,8 @@
     object-position: center;
     height: 190px;
     border-radius: 10px;
-    transition: transform .2s;
+    transition: transform .3s;
 }
 .PlayersHeader__item img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
