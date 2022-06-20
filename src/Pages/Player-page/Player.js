@@ -1,15 +1,11 @@
 import React from "react";
 import { Header } from "../../components/Header/Header";
-import { Players } from "../../components/Players/Players";
 
 export const Player = () => {
   return (
     <div>
       <>
-        <Header
-          title="Players"
-          image="/assets/players.webp"
-        >
+        <Header title="Players" image="/assets/players.webp">
           A coffee bean is a seed of the Coffea plant and the source for coffee.
           It is the pip inside the red or purple fruit often referred to as a
           cherry. Just like ordinary cherries, the coffee fruit is also a
@@ -18,7 +14,6 @@ export const Player = () => {
           resemblance to true beans.
         </Header>
       </>
-      <Players />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Sale.css'
-import { MainHeader } from '../../components/MainHeader/MainHeader'
+
 import { Header } from '../../components/Header/Header'
 
 export const Sale = () => {
@@ -17,7 +17,6 @@ export const Sale = () => {
           resemblance to true beans.
         </Header>
       </>
-      <MainHeader/>
     </div>
   )
 }

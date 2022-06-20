@@ -1,6 +1,6 @@
 import React from "react";
 import { PlayersHeader } from "../../components/PlayersHeader/PlayersHeader";
-import { MainHeader } from "../../components/MainHeader/MainHeader";
+
 import "./Home-page.css";
 import { Header } from "../../components/Header/Header";
 import CategoryList from '../../components/CategoryList/CategoryList'
@@ -23,7 +23,6 @@ export const HomePage = () => {
           resemblance to true beans.
         </Header>
       </>
-      <MainHeader />
     </div>
   );
 };

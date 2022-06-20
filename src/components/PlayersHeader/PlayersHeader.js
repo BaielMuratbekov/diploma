@@ -30,7 +30,6 @@ export const PlayersHeader = () => {
             <img src="/assets/mbappe.png" alt="ronaldo" />
           </Link>
         </div>
-       
       </div>
     </div>
   );
