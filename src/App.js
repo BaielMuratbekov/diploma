@@ -2,15 +2,15 @@ import { Routes, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./components/redux";
 import { Layout } from "./components/Layout/Layout";
-import { HomePage } from "./Pages/Home-page/Home-page";
-import { Sale } from "./Pages/Sale/Sale";
-import { About } from "./Pages/About/About";
-import { Player } from "./Pages/Player-page/Player";
-import NotFound from "./Pages/NotFound/NotFound";
-import Product from "./Pages/Product";
-import Products from "./Pages/Products";
-import Categories from "./Pages/Categories";
-import Category from "./Pages/Category";
+import { HomePage } from "./pages/HomePage/HomePage";
+import { About } from "./pages/About";
+import { Sale } from "./pages/Sale";
+import { Player } from "./pages/Player";
+import NotFound from "./pages/NotFound/NotFound";
+import Product from "./pages/Product";
+import Products from "./pages/Products";
+import Categories from "./pages/Categories";
+import Category from "./pages/Category";
 function App() {
   return (
     <Provider store={store}>

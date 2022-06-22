@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from "./NavOne.module.css"
-import { CartBlok } from '../../Cart-blok/Cart-blok.js'
+import { CartBlok } from '../../CartBlok/CartBlok.js'
 import { BiUserCircle } from 'react-icons/bi'
 export const NavOne = () => {
     return (

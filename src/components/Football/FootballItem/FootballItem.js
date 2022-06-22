@@ -1,7 +1,7 @@
 import React from 'react'
 import "./FootballItem.css"
-import { FootballByu } from '../Football-byu';
-import { FootballCover } from '../Football-cover';
+import { FootballByu } from '../FootballByu/FootballByu';
+import { FootballCover } from '../FootballCover/FootballCover';
 import { Link } from 'react-router-dom';
 export const FootballItem = ({ product  }) => {
     return (

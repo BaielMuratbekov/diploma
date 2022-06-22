@@ -2,8 +2,8 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Button } from "../Button";
 import { calcTotalPrice } from "../untils";
-import { CartItem } from "../Cart-item/Cart-item";
-import "./Cart-menu.css";
+import { CartItem } from "../CartItem/CartItem";
+import "./CartMenu.css";
 
 export const CartMenu = ({ onClick }) => {
     const items = useSelector((state) => state.cart.itemsInCart);

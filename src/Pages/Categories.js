@@ -1,4 +1,3 @@
-
 import { Header } from "../components/Header/Header";
 import { getCategories } from "../data/categories";
 import CategoryList from "../components/CategoryList/CategoryList";
@@ -14,8 +13,6 @@ function Categories() {
           frjvkanstgkvnsrlgdnaufnliuvaufbjbbbdsasdfghjkuytrsdfghjkjhgfdsdfghjkkjhgfdhjklkjdfghjk
         </Header>
       </>
-
-      
     </div>
   );
 }

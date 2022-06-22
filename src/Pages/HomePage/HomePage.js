@@ -1,7 +1,5 @@
 import React from "react";
 import { PlayersHeader } from "../../components/PlayersHeader/PlayersHeader";
-
-import "./Home-page.css";
 import { Header } from "../../components/Header/Header";
 import CategoryList from '../../components/CategoryList/CategoryList'
 import {getCategories} from '../../data/categories'

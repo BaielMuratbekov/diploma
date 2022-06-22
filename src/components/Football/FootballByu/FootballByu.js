@@ -2,7 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Button } from '../../Button'
 import { deletItemFromCart, setItemInCart } from '../../redux/cart/reducer';
-import "./Football-byu.css"
+import "./FootballByu.css"
 import { BsFillCartXFill } from 'react-icons/bs'
 import { BsFillCartPlusFill } from 'react-icons/bs'
 

@@ -1,12 +1,9 @@
-import React from 'react'
-import './Sale.css'
-
-import { Header } from '../../components/Header/Header'
+import React from "react";
+import { Header } from "../components/Header/Header";
 
 export const Sale = () => {
- 
   return (
-    <div className='Sale'>
+    <div className="Sale">
       <>
         <Header title="Sale to -50%!" image="/assets/sale.jpg">
           A coffee bean is a seed of the Coffea plant and the source for coffee.
@@ -18,5 +15,5 @@ export const Sale = () => {
         </Header>
       </>
     </div>
-  )
-}
+  );
+};

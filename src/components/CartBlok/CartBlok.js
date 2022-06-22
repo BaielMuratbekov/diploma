@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
-import "./Cart-blok.css"
+import "./CartBlok.css"
 import { BiCartAlt } from 'react-icons/bi'
-import { CartMenu } from '../Cart-menu/Cart-menu'
+import { CartMenu } from '../CartMenu/CartMenu'
 import { calcTotalPrice } from '../untils'
-import { ItemsInCart } from '../Items-in-cart/Items-in-cart'
+import { ItemsInCart } from '../ItemsInCart/ItemsInCart'
 
 
 export const CartBlok = () => {

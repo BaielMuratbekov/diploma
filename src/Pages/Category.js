@@ -7,7 +7,7 @@ import { getProducts } from "../data/products";
 function Category() {
   const params = useParams();
   const category = getCategory(params.categoryId);
-  
+
   if (!category) {
     return null;
   }
@@ -15,7 +15,9 @@ function Category() {
   return (
     <div>
       <>
-        <Header image={category.headerimage} title={category.title}>{category.description}</Header>
+        <Header image={category.headerimage} title={category.title}>
+          {category.description}
+        </Header>
       </>
       <div className="container">
         <FootballList products={getProducts(category.categoryId)} />
