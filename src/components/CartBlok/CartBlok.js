@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 export const CartBlok = () => {
   const number = useSelector(store => {
-    return Object.values(store.cart.items).reduce((sum, number) => sum + number, 0);
+    return Object.values(store.cart.itemsInCart).reduce((sum, number) => sum + number, 0);
   });
   return (
     <NavLink to='/cart'>
