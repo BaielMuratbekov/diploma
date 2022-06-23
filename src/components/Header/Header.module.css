@@ -1,9 +1,10 @@
 .Header {
-    min-height: 70vh;
+    margin-top: 3rem;
+    padding: 30px;
     background-color: #010113;
     display: flex;
-    margin-top: 3rem;
     justify-content: space-around;
+    align-items: center;
 }
 .Header__left h1{
     text-transform: uppercase;
@@ -13,41 +14,23 @@
 .Header__left h1,p{
     max-width: 400px;
 }
-.Header__right{
-    
-    display: flex;
-    justify-content: center;
-    
-}
-.Header__right img{
+.Header img{
     border-radius: 25px;
     max-width: 600px;
-
-    margin: 1rem;
+    min-width: 400px;
+    max-height: 400px;
+    overflow: hidden;
     object-fit: cover;
     object-position: center;
-    overflow: hidden;
-
 }
 @media (max-width: 980px) {
     .Header {
         flex-direction: column-reverse;
         justify-content: center;
-    }
-    .Header__left{
-        margin: 10px;
-    }
-}
-@media (max-width: 685px) {
-    .Header__left h1,p{
-        margin: 0;
-        max-width: 400px;
-    }
-    .Header__right{
-        margin: 0;
-    }
-}
-@media (max-width: 485px) {
+        padding: 20px;
 
-    
+    }
+    .Header__left {
+        margin-top: 20px;
+    }
 }
