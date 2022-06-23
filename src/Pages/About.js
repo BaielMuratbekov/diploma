@@ -1,16 +1,13 @@
-import React from "react";
-import { AboutItem } from "../components/AboutItem/AboutItem";
 import { Header } from "../components/Header/Header";
-
-export const About = () => {
-  return (
-    <div className="About">
-      <>
+import { AboutItem } from "../components/AboutItem/AboutItem";
+function About() {
+  return ( 
+    <>
         <Header title="About store" image="/assets/about3.webp">
           <AboutItem />
         </Header>
       </>
-      <div className="container"></div>
-    </div>
-  );
-};
+   );
+}
+
+export default About;
