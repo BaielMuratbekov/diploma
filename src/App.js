@@ -13,13 +13,14 @@ import Cart from "./pages/Cart";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import Checkout from "./pages/Checout";
+import Auth from "./pages/Auth";
 
 function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch({ type: "cart/restore" });
-  }, []);
+  }, [dispatch]);
 
   return (
     <div className="App">
@@ -35,6 +36,7 @@ function App() {
           <Route path="/categories/:categoryId" element={<Category />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
+          <Route path="/auth" element={<Auth />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
