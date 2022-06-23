@@ -16,10 +16,6 @@ body {
 
 }
 
-button {
-  cursor: pointer;
-}
-
 .container {
   max-width: 1060px;
   margin: 0 auto;

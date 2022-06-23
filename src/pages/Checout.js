@@ -44,26 +44,26 @@ function Checkout() {
         {output}
         <hr />
         Total: ${total}
-        <form onSubmit={onCheckout}>
-          <label>
-            First name:
-            <input type="text" name="firstName" required />
-          </label>
-          <label>
-            Last name:
-            <input type="text" name="lastName" required />
-          </label>
-          <label>
-            Address:
-            <input type="text" name="address" required />
-          </label>
-          <label>
-            Phone:
-            <input type="text" name="phone" required />
-          </label>
+        <form  onSubmit={onCheckout}>
+        <label>
+          First name:
+          <input type="text" name="firstName" required />
+        </label>
+        <label>
+          Last name:
+          <input type="text" name="lastName" required />
+        </label>
+        <label>
+          Address:
+          <input type="text" name="address" required />
+        </label>
+        <label>
+          Phone:
+          <input type="text" name="phone" required />
+        </label>
 
-          <button>Complete the order</button>
-        </form>
+        <button>Complete the order</button>
+      </form>
       </div>
     </>
   );

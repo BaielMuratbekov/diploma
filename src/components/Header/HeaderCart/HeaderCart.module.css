@@ -1,0 +1,41 @@
+.HeaderCart {
+
+    margin-top: 3rem;
+    background-color: #010113;
+}
+
+.HeaderCart h1 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.HeaderCart__list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.HeaderCart__item {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    padding-bottom: 30px;
+    border-bottom: 2px solid crimson;
+
+}
+
+.HeaderCart__item button {
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+}
+
+.HeaderCart__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.HeaderCart__checkout {
+    display: flex;
+    justify-content: space-between;
+}

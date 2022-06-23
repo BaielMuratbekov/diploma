@@ -14,8 +14,9 @@ function Product() {
     <>
       <Header title={product.title} image={product.image}>
         {product.description}
+        <FootballByu productId={params.productId} />
       </Header>
-      <FootballByu productId={params.productId} />
+      
     </>
   );
 }

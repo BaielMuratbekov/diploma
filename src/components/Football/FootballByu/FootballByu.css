@@ -1,10 +1,10 @@
 .Football-byu {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
 }
 
 .Football-byu button{
     background-color: transparent;
-    margin-left: 2rem;
+    margin-top: 40px;
     border: none;
 }

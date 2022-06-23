@@ -7,10 +7,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
     font-weight: bold;
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 120, 2);
     z-index: 2;
-    left: 5px;
-    top: -5px;
+    left: 20px;
+    top: -9px;
 }

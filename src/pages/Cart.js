@@ -1,9 +1,12 @@
 import { getProducts } from "../data/products";
 import { Link } from "react-router-dom";
-import { Header } from "../components/Header/Header";
-import { BsFillCartXFill } from "react-icons/bs";
+import { MdDelete } from "react-icons/md";
+import { BsPlus } from "react-icons/bs";
+import { BiMinus } from "react-icons/bi";
+import { IoBagCheckOutline } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
-
+import HeaderCart from "../components/Header/HeaderCart/HeaderCart";
+import classes from "../components/Header/HeaderCart/HeaderCart.module.css";
 function Cart() {
   const items = useSelector((store) => store.cart.itemsInCart);
   const dispatch = useDispatch();
@@ -16,30 +19,52 @@ function Cart() {
       total += product.price * items[product.productId];
 
       return (
-        <div>
-          <Link to="">{product.title}</Link> {items[product.productId]} $
-          {product.price * items[product.productId]}
-          <button
-            onClick={() =>
-              dispatch({ type: "cart/decrement", payload: product.productId })
-            }
-          >
-            -
-          </button>
-          <button
-            onClick={() =>
-              dispatch({ type: "cart/increment", payload: product.productId })
-            }
-          >
-            +
-          </button>
-          <button
-            onClick={() =>
-              dispatch({ type: "cart/delete", payload: product.productId })
-            }
-          >
-            <BsFillCartXFill size={23} color="tomato" />
-          </button>
+        <div className={classes.HeaderCart__item}>
+          <div>
+            <img src={product.image} alt={product.title} width={200} />
+          </div>
+          <div className={classes.HeaderCart__right}>
+            <div>
+              <Link to="">{product.title}</Link>
+              <button
+                onClick={() =>
+                  dispatch({
+                    type: "cart/decrement",
+                    payload: product.productId,
+                  })
+                }
+              >
+                <BiMinus size={23}/>
+              </button>
+              {items[product.productId]}
+              <button
+                onClick={() =>
+                  dispatch({
+                    type: "cart/increment",
+                    payload: product.productId,
+                  })
+                }
+              >
+                <BsPlus size={23}/>
+              </button>
+              <button
+                onClick={() =>
+                  dispatch({ type: "cart/delete", payload: product.productId })
+                }
+              >
+                <MdDelete size={23} color="tomato" />
+              </button>
+            </div>
+
+            <div className={classes.HeaderCart__checkout}>
+              {product.price * items[product.productId]} сом{" "}
+              <Link to="/checkout" >
+                <IoBagCheckOutline size={23}/>
+              </Link>
+            </div>
+            <div></div>
+          </div>
+          
         </div>
       );
     });
@@ -50,14 +75,11 @@ function Cart() {
 
   return (
     <>
-      <Header title="Your Shopping Cart" image="/assets/about3.webp">
-        Please review items in your cart.
-      </Header>
+      <HeaderCart title="Your Shopping Cart">{output}</HeaderCart>
+      
       <div>
-        {output}
         <hr />
-        Total: ${total}
-        <Link to="/checkout">Checkout</Link>
+        Total: {total} сом
       </div>
     </>
   );
