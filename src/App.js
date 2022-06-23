@@ -19,7 +19,7 @@ function App() {
   useEffect(() => {
       dispatch({ type: "cart/restore" });
     
-  }, []);
+  },[]);
 
   return (
     <div className="App">
