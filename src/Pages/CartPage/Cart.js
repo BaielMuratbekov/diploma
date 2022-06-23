@@ -1,4 +1,3 @@
-
 import { getProducts } from "../../data/products";
 import { Link } from "react-router-dom";
 import { Header } from "../../components/Header/Header";

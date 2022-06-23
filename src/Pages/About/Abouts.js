@@ -1,5 +1,6 @@
-import { Header } from "../components/Header/Header";
-import { AboutItem } from "../components/AboutItem/AboutItem";
+import { AboutItem } from "../../components/AboutItem/AboutItem";
+import { Header } from "../../components/Header/Header";
+
 function Abouts() {
   return ( 
     <>

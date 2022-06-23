@@ -3,7 +3,7 @@ const products = [
     image: "/assets/realforma1.jpg",
     title: "Real Madrid",
     price: 2500,
-    productId: "realM",
+    productId: "real",
     categoryId: "laliga",
     description: "lorem",
   },
@@ -62,7 +62,8 @@ const products = [
     productId: "borussia",
     categoryId: "bundesliga",
     description: "lorem",
-  },{
+  },
+  {
     image: "/assets/chelsea.jpg",
     title: "Chelsea",
     price: 1900,
@@ -102,21 +103,16 @@ const products = [
     categoryId: "restofworld",
     description: "lorem",
   },
-  
-  
 ];
 export function getProducts(categoryId) {
   if (categoryId) {
-    return products.filter(product => product.categoryId === categoryId);    
+    return products.filter((product) => product.categoryId === categoryId);
   }
 
   return products;
 }
 export function getProduct(productId) {
   return products[
-    products.findIndex(
-      product =>  product.productId === productId
-    )
+    products.findIndex((product) => product.productId === productId)
   ];
-  
 }
