@@ -1,6 +1,9 @@
 .Football-byu {
     display: flex;
     justify-content: space-between;
-
 }
 
+.Football-byu button{
+    background-color: transparent;
+    margin-left: 2rem;
+}
