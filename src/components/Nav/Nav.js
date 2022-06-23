@@ -6,7 +6,6 @@ export const Nav = () => {
         <div className={classes.Nav}>
             <ul >
                 <NavItem url="/">Home</NavItem>
-                <NavItem url="/about" >About Store</NavItem>
                 <NavItem url="/player" >Players</NavItem>
                 <NavItem url="/sale" >Sale UP To -50%</NavItem>
             </ul>
