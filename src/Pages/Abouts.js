@@ -1,6 +1,6 @@
 import { Header } from "../components/Header/Header";
 import { AboutItem } from "../components/AboutItem/AboutItem";
-function About() {
+function Abouts() {
   return ( 
     <>
         <Header title="About store" image="/assets/about3.webp">
@@ -10,4 +10,4 @@ function About() {
    );
 }
 
-export default About;
+export default Abouts;
