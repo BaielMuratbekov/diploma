@@ -5,10 +5,10 @@ import Abouts from './pages/About/Abouts'
 import { Sale } from "./pages/Sale/Sale";
 import { Player } from "./pages/Players/Player";
 import NotFound from "./pages/NotFound/NotFound";
-import Product from "./pages/Product";
-import Products from "./pages/Products";
-import Categories from "./pages/Categories";
-import Category from "./pages/Category";
+import Product from "./pages/Product/Product";
+import Products from "./pages/Product/Products";
+import Categories from "./pages/Category/Categories";
+import Category from "./pages/Category/Category";
 import Cart from "./pages/CartPage/Cart";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
