@@ -1,11 +1,11 @@
 import React from "react";
-import { Header } from "../../components/Header/Header";
+import { Header } from "../components/Header/Header";
 
-export const Player = () => {
+export const Sale = () => {
   return (
-    <div>
+    <div className="Sale">
       <>
-        <Header title="Players" image="/assets/players.webp">
+        <Header title="Sale to -50%!" image="/assets/sale.jpg">
           A coffee bean is a seed of the Coffea plant and the source for coffee.
           It is the pip inside the red or purple fruit often referred to as a
           cherry. Just like ordinary cherries, the coffee fruit is also a

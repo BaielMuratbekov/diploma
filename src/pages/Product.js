@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
-import { Header } from "../../components/Header/Header";
-import { getProduct } from "../../data/products";
-import { FootballByu } from "../../components/Football/FootballByu/FootballByu";
+import { Header } from "../components/Header/Header";
+import { getProduct } from "../data/products";
+import {FootballByu} from '../components/Football/FootballByu/FootballByu'
 function Product() {
   const params = useParams();
   const product = getProduct(params.productId);

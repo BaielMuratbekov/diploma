@@ -1,8 +1,7 @@
-import { getProducts } from "../../data/products";
+import { getProducts } from "../data/products";
 import { Link } from "react-router-dom";
-import { Header } from "../../components/Header/Header";
+import { Header } from "../components/Header/Header";
 import { BsFillCartXFill } from "react-icons/bs";
-import classes from "./Cart.module.css";
 import { useDispatch, useSelector } from "react-redux";
 
 function Cart() {
@@ -24,7 +23,6 @@ function Cart() {
             onClick={() =>
               dispatch({ type: "cart/decrement", payload: product.productId })
             }
-            className={classes.CartButtonDecrement}
           >
             -
           </button>
@@ -32,7 +30,6 @@ function Cart() {
             onClick={() =>
               dispatch({ type: "cart/increment", payload: product.productId })
             }
-            className={classes.CartButtonIncrement}
           >
             +
           </button>
@@ -40,7 +37,6 @@ function Cart() {
             onClick={() =>
               dispatch({ type: "cart/delete", payload: product.productId })
             }
-            className={classes.CartButtonDelete}
           >
             <BsFillCartXFill size={23} color="tomato" />
           </button>

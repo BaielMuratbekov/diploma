@@ -1,15 +1,15 @@
 import { Routes, Route } from "react-router-dom";
 import { Layout } from "./components/Layout/Layout";
-import { HomePage } from "./pages/HomePage/HomePage";
-import Abouts from './pages/About/Abouts'
-import { Sale } from "./pages/Sale/Sale";
-import { Player } from "./pages/Players/Player";
-import NotFound from "./pages/NotFound/NotFound";
-import Product from "./pages/Product/Product";
-import Products from "./pages/Product/Products";
-import Categories from "./pages/Category/Categories";
-import Category from "./pages/Category/Category";
-import Cart from "./pages/CartPage/Cart";
+import { HomePage } from "./pages/HomePage";
+import Abouts from "./pages/Abouts";
+import { Sale } from "./pages/Sale";
+import { Player } from "./pages/Player";
+import NotFound from "./pages/NotFound";
+import Product from "./pages/Product";
+import Products from "./pages/Products";
+import Categories from "./pages/Categories";
+import Category from "./pages/Category";
+import Cart from "./pages/Cart";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 
@@ -17,9 +17,8 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-      dispatch({ type: "cart/restore" });
-    
-  },[]);
+    dispatch({ type: "cart/restore" });
+  }, []);
 
   return (
     <div className="App">

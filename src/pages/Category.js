@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
-import FootballList from "../../components/Football/FootballList/FootballList";
-import { Header } from "../../components/Header/Header";
-import { getCategory } from "../../data/categories";
-import { getProducts } from "../../data/products";
+import FootballList from "../components/Football/FootballList/FootballList";
+import { Header } from "../components/Header/Header";
+import { getCategory } from "../data/categories";
+import { getProducts } from "../data/products";
 
 function Category() {
   const params = useParams();

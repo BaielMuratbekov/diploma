@@ -1,11 +1,18 @@
 import React from "react";
-import { Header } from "../../components/Header/Header";
-
-export const Sale = () => {
+import CategoryList from "../components/CategoryList/CategoryList";
+import { Header } from "../components/Header/Header";
+import { PlayersHeader } from "../components/PlayersHeader/PlayersHeader";
+import { getCategories } from "../data/categories";
+export const HomePage = () => {
   return (
-    <div className="Sale">
+    <div className="Home-page">
+      <CategoryList categories={getCategories()} />
+      <PlayersHeader />
       <>
-        <Header title="Sale to -50%!" image="/assets/sale.jpg">
+        <Header
+          title="Welcome to our football store!"
+          image="/assets/aboutfootball.jpg"
+        >
           A coffee bean is a seed of the Coffea plant and the source for coffee.
           It is the pip inside the red or purple fruit often referred to as a
           cherry. Just like ordinary cherries, the coffee fruit is also a
