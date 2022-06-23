@@ -2,8 +2,8 @@ import { Routes, Route } from "react-router-dom";
 import { Layout } from "./components/Layout/Layout";
 import { HomePage } from "./pages/HomePage/HomePage";
 import Abouts from './pages/About/Abouts'
-import { Sale } from "./pages/Sale";
-import { Player } from "./pages/Player";
+import { Sale } from "./pages/Sale/Sale";
+import { Player } from "./pages/Players/Player";
 import NotFound from "./pages/NotFound/NotFound";
 import Product from "./pages/Product";
 import Products from "./pages/Products";
