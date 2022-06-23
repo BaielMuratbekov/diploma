@@ -1,6 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import { Provider } from "react-redux";
-import { store } from "./components/redux";
 import { Layout } from "./components/Layout/Layout";
 import { HomePage } from "./pages/HomePage/HomePage";
 import { About } from "./pages/About";
@@ -11,25 +9,34 @@ import Product from "./pages/Product";
 import Products from "./pages/Products";
 import Categories from "./pages/Categories";
 import Category from "./pages/Category";
+import Cart from "./pages/CartPage/Cart";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch({ type: "cart/restore" });
+  }, []);
+
   return (
-    <Provider store={store}>
-      <div className="App">
-        <Layout>
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/sale" element={<Sale />} />
-            <Route path="/player" element={<Player />} />
-            <Route path="/products" element={<Products />} />
-            <Route path=":productId" element={<Product />} />
-            <Route path="/categories" element={<Categories />} />
-            <Route path="/categories/:categoryId" element={<Category />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Layout>
-      </div>
-    </Provider>
+    <div className="App">
+      <Layout>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/sale" element={<Sale />} />
+          <Route path="/player" element={<Player />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/products/:productId" element={<Product />} />
+          <Route path="/categories" element={<Categories />} />
+          <Route path="/categories/:categoryId" element={<Category />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Layout>
+    </div>
   );
 }
 
