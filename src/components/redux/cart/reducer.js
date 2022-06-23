@@ -1,41 +1,41 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-function saveInStorage(items) {
-  localStorage.setItem("cartItems", JSON.stringify(items));
+function saveInStorage(itemsInCart) {
+  localStorage.setItem("cartItems", JSON.stringify(itemsInCart));
 }
 
 const cartSlice = createSlice({
   name: "cart",
   initialState: {
-    items: {},
+    itemsInCart: {},
   },
   reducers: {
     add: (store, action) => {
-      if (store.items[action.payload]) {
-        store.items[action.payload]++;
+      if (store.itemsInCart[action.payload]) {
+        store.itemsInCart[action.payload]++;
       } else {
-        store.items[action.payload] = 1;
+        store.itemsInCart[action.payload] = 1;
       }
-      saveInStorage(store.items);
+      saveInStorage(store.itemsInCart);
     },
     delete: (store, action) => {
-      delete store.items[action.payload];
-      saveInStorage(store.items);
+      delete store.itemsInCart[action.payload];
+      saveInStorage(store.itemsInCart);
     },
     increment: (store, action) => {
-      store.items[action.payload]++;
-      saveInStorage(store.items);
+      store.itemsInCart[action.payload]++;
+      saveInStorage(store.itemsInCart);
     },
     decrement: (store, action) => {
-      if (store.items[action.payload] > 1) {
-        store.items[action.payload]--;
+      if (store.itemsInCart[action.payload] > 1) {
+        store.itemsInCart[action.payload]--;
       } else {
-        delete store.items[action.payload];
+        delete store.itemsInCart[action.payload];
       }
-      saveInStorage(store.items);
+      saveInStorage(store.itemsInCart);
     },
     restore: (store, action) => {
-      store.items = JSON.parse(localStorage.getItem("cartItems") ?? "{}");
+      store.itemsInCart = JSON.parse(localStorage.getItem("cartItems") ?? "{}");
     },
   },
 });
