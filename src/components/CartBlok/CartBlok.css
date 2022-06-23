@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    margin-right: 30px; 
+    margin-right: 50px; 
 }
 
 .total-price {
@@ -14,4 +14,7 @@
 .cart-icon {
     cursor: pointer;
     position: relative;
+}
+.cart-icon:hover{       
+    color: #fc7e00;
 }
