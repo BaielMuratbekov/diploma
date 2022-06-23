@@ -1,5 +1,17 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import axios from "axios";
 
+export const checkout = createAsyncThunk(
+  "cart/checkout",
+  async (order, thunkAPI) => {
+    const response = await axios.post(
+      "https://diploma-bb721-default-rtdb.firebaseio.com/orders.json",
+      order
+    );
+
+    return response.data;
+  }
+);
 function saveInStorage(itemsInCart) {
   localStorage.setItem("cartItems", JSON.stringify(itemsInCart));
 }
@@ -36,6 +48,12 @@ const cartSlice = createSlice({
     },
     restore: (store, action) => {
       store.itemsInCart = JSON.parse(localStorage.getItem("cartItems") ?? "{}");
+    },
+  },
+  extraReducers: {
+    [checkout.fulfilled]: (state, action) => {
+      console.log(action);
+      state.itemsInCart = {};
     },
   },
 });
