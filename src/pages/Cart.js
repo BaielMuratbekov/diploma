@@ -34,7 +34,7 @@ function Cart() {
                   })
                 }
               >
-                <BiMinus size={23}/>
+                <BiMinus size={23} />
               </button>
               {items[product.productId]}
               <button
@@ -45,7 +45,7 @@ function Cart() {
                   })
                 }
               >
-                <BsPlus size={23}/>
+                <BsPlus size={23} />
               </button>
               <button
                 onClick={() =>
@@ -58,13 +58,12 @@ function Cart() {
 
             <div className={classes.HeaderCart__checkout}>
               {product.price * items[product.productId]} сом{" "}
-              <Link to="/checkout" >
-                <IoBagCheckOutline size={23}/>
+              <Link to="/checkout">
+                <IoBagCheckOutline size={23} />
               </Link>
             </div>
             <div></div>
           </div>
-          
         </div>
       );
     });
@@ -76,7 +75,7 @@ function Cart() {
   return (
     <>
       <HeaderCart title="Your Shopping Cart">{output}</HeaderCart>
-      
+
       <div>
         <hr />
         Total: {total} сом

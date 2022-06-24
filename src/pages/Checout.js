@@ -3,7 +3,10 @@ import { getProducts } from "../data/products";
 import { Header } from "../components/Header/Header";
 import { Link, useNavigate } from "react-router-dom";
 import { checkout } from "../components/redux/cartSlice";
-
+import { AiFillHome } from "react-icons/ai";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaUserAlt } from "react-icons/fa";
+import classes from "../components/AuthForm/AuthForm.module.css";
 function Checkout() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -18,13 +21,15 @@ function Checkout() {
 
       return (
         <div>
-          <Link to="">{product.title}</Link> {items[product.productId]} $
-          {product.price * items[product.productId]}
+          <Link to="">{product.title}</Link> | {items[product.productId]} | 
+            {product.price * items[product.productId]} сом
         </div>
       );
     });
 
-  output = "No items in the cart.";
+    if (!output) {
+      output = "No items in the cart.";
+    }
 
   function onCheckout(event) {
     event.preventDefault();
@@ -40,30 +45,31 @@ function Checkout() {
       <Header title="Checkout" image="/assets/about3.webp">
         Please enter your information.
       </Header>
-      <div>
-        {output}
+      {output}
         <hr />
-        Total: ${total}
-        <form  onSubmit={onCheckout}>
-        <label>
-          First name:
-          <input type="text" name="firstName" required />
-        </label>
-        <label>
-          Last name:
-          <input type="text" name="lastName" required />
-        </label>
-        <label>
-          Address:
-          <input type="text" name="address" required />
-        </label>
-        <label>
-          Phone:
-          <input type="text" name="phone" required />
-        </label>
+        Total: {total}сом
+      <div className={classes.Auth}>
+        
+        <form onSubmit={onCheckout} className={classes.AuthForm}>
+          <label>
+            <FaUserAlt className={classes.AuthForm__icon} />
+            <input type="text" name="firstName" required placeholder="First name" />
+          </label>
+          <label>
+            <FaUserAlt className={classes.AuthForm__icon} />
+            <input type="text" name="lastName" required placeholder="Last name" />
+          </label>
+          <label>
+            <AiFillHome className={classes.AuthForm__icon} />
+            <input type="text" name="address" required placeholder="Address" />
+          </label>
+          <label>
+            <FaPhoneAlt className={classes.AuthForm__icon} />
+            <input type="phone" name="phone" required placeholder="Phone" />
+          </label>
 
-        <button>Complete the order</button>
-      </form>
+          <button>Complete the order</button>
+        </form>
       </div>
     </>
   );
