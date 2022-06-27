@@ -7,10 +7,20 @@ import { AiFillHome } from "react-icons/ai";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 import classes from "../components/AuthForm/AuthForm.module.css";
+import { useEffect } from "react";
 function Checkout() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const items = useSelector((store) => store.cart.itemsInCart);
+  const { items, localId } = useSelector(store => ({
+    items: store.cart.itemsInCart,
+    localId: store.auth.localId
+  }));
+
+  useEffect(() => {
+    if (!localId) {
+      navigate('/auth');
+    }
+  }, [localId, navigate]);
   const products = getProducts();
 
   let total = 0;
