@@ -1,12 +1,28 @@
 import classes from "./AuthForm.module.css";
 import { FaUserAlt } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
+import { useDispatch } from "react-redux";
+import { start } from "../../redux/authSlice";
+
 function AuthForm() {
+  const dispatch = useDispatch();
+
+  function onAuthStart(event) {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+    dispatch(
+      start({
+        email: formData.get("email"),
+        password: formData.get("password"),
+        method: "signup",
+      })
+    );
+  }
   return (
     <div className={classes.Auth}>
-        
-      <form className={classes.AuthForm}>
-      <h3>Entrance</h3>
+      <form onSubmit={onAuthStart} className={classes.AuthForm}>
+        <h3>Entrance</h3>
         <p>Use a Google Account</p>
         <label>
           <FaUserAlt className={classes.AuthForm__icon} />

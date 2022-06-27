@@ -2,12 +2,12 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import "./FootballByu.css";
 import { BsFillCartPlusFill } from "react-icons/bs";
-
+import { add } from "../../../redux/cartSlice";
 export const FootballByu = ({ productId }) => {
   const dispatch = useDispatch();
 
   function onAddToCart() {
-    dispatch({ type: "cart/add", payload: productId });
+    dispatch(add(productId));
   }
 
   return (

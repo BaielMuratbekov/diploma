@@ -12,14 +12,11 @@ export const checkout = createAsyncThunk(
     return response.data;
   }
 );
-function saveInStorage(itemsInCart) {
-  localStorage.setItem("cartItems", JSON.stringify(itemsInCart));
-}
 
 const cartSlice = createSlice({
   name: "cart",
   initialState: {
-    itemsInCart: {},
+    itemsInCart: JSON.parse(localStorage.getItem('cartItemsInCart') ?? '{}'),
   },
   reducers: {
     add: (store, action) => {
@@ -28,15 +25,12 @@ const cartSlice = createSlice({
       } else {
         store.itemsInCart[action.payload] = 1;
       }
-      saveInStorage(store.itemsInCart);
     },
-    delete: (store, action) => {
+    remove: (store, action) => {
       delete store.itemsInCart[action.payload];
-      saveInStorage(store.itemsInCart);
     },
     increment: (store, action) => {
       store.itemsInCart[action.payload]++;
-      saveInStorage(store.itemsInCart);
     },
     decrement: (store, action) => {
       if (store.itemsInCart[action.payload] > 1) {
@@ -44,11 +38,8 @@ const cartSlice = createSlice({
       } else {
         delete store.itemsInCart[action.payload];
       }
-      saveInStorage(store.itemsInCart);
     },
-    restore: (store, action) => {
-      store.itemsInCart = JSON.parse(localStorage.getItem("cartItems") ?? "{}");
-    },
+    
   },
   extraReducers: {
     [checkout.fulfilled]: (state, action) => {
@@ -57,5 +48,5 @@ const cartSlice = createSlice({
     },
   },
 });
-
+export const { add, remove, increment, decrement } = cartSlice.actions;
 export default cartSlice.reducer;

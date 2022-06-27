@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getProducts } from "../data/products";
 import { Header } from "../components/Header/Header";
 import { Link, useNavigate } from "react-router-dom";
-import { checkout } from "../components/redux/cartSlice";
+import { checkout } from "../redux/cartSlice";
 import { AiFillHome } from "react-icons/ai";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";

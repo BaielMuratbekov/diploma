@@ -7,6 +7,7 @@ import { IoBagCheckOutline } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
 import HeaderCart from "../components/Header/HeaderCart/HeaderCart";
 import classes from "../components/Header/HeaderCart/HeaderCart.module.css";
+import  {increment, decrement, remove } from "../redux/cartSlice";
 function Cart() {
   const items = useSelector((store) => store.cart.itemsInCart);
   const dispatch = useDispatch();
@@ -26,32 +27,14 @@ function Cart() {
           <div className={classes.HeaderCart__right}>
             <div>
               <Link to="">{product.title}</Link>
-              <button
-                onClick={() =>
-                  dispatch({
-                    type: "cart/decrement",
-                    payload: product.productId,
-                  })
-                }
-              >
+              <button onClick={() => dispatch(decrement(product.productId))}>
                 <BiMinus size={23} />
               </button>
               {items[product.productId]}
-              <button
-                onClick={() =>
-                  dispatch({
-                    type: "cart/increment",
-                    payload: product.productId,
-                  })
-                }
-              >
+              <button onClick={() => dispatch(increment(product.productId))}>
                 <BsPlus size={23} />
               </button>
-              <button
-                onClick={() =>
-                  dispatch({ type: "cart/delete", payload: product.productId })
-                }
-              >
+              <button onClick={() => dispatch(remove(product.productId))}>
                 <MdDelete size={23} color="tomato" />
               </button>
             </div>
@@ -68,7 +51,7 @@ function Cart() {
       );
     });
 
-  if (!output) {
+  if (!output.length) {
     output = "No items in the cart.";
   }
 
