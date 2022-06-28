@@ -1,11 +1,8 @@
 import axios from "axios";
 const { createSlice, createAsyncThunk } = require("@reduxjs/toolkit");
 const key = "AIzaSyCASB-vYb5eG37kZPXcT6f1gvhLj7YJlH8";
-const signInUrl =
-  "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=" +
-  key;
-const signUpUrl =
-  "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=" + key;
+const signInUrl = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=" + key;
+const signUpUrl = "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=" + key;
 
 export const start = createAsyncThunk("auth/start", (data, thunkAPI) => {
   thunkAPI.dispatch({ type: "auth/init" });

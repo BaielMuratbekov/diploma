@@ -2,17 +2,16 @@
     padding: 1rem 0;
     background-color: rgb(3, 3, 11);
     color: white;
-    width: 100%;
+    width: 260px;
     overflow: hidden;
-    text-align: center;
 
     position: fixed;
-    top: 50px;
+    top: 0;
     left: 0;
     bottom: 0;
-    z-index: 4;
+    z-index: 100;
 
-    transform: translateY(-110%);
+    transform: translateX(-300px);
     transition: transform .3s;
 }
 
@@ -23,12 +22,15 @@
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 90;
     display: none;
 }
-.Drawer ul{
+
+.Drawer ul {
     flex-direction: column;
-    margin: 0 auto;
+    margin-left: 0;
 }
+
 .open .backdrop {
     display: block;
 }
@@ -43,6 +45,6 @@
     }
 
     .Drawer .content {
-        transform: translateY(-110%);
+        transform: translateX(-300px);
     }
 }
