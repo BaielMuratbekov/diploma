@@ -3,7 +3,7 @@ import { NavToggle } from "../Nav/NavToggle/NavToggle";
 import { Logo } from "../Nav/Logo/Logo";
 import classes from "./Toolbar.module.css";
 import { Nav } from "../Nav/Nav";
-import { NavOne } from "../Nav/NavOne/NavOne";
+import { CartBlok } from "../CartBlok/CartBlok";
 
 function Toolbar({ toggleDrawer }) {
   return (
@@ -11,7 +11,7 @@ function Toolbar({ toggleDrawer }) {
       
       <Logo />
       <Nav/>
-      <NavOne/>
+      <CartBlok/>
       <NavToggle callback={toggleDrawer} />
     </nav>
   );
