@@ -36,3 +36,7 @@ ul {
   list-style: none;
   margin: 0;
 }
+.title{
+  text-align: center;
+  margin: 20px 0;
+}

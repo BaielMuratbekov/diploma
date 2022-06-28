@@ -4,3 +4,9 @@
     flex-wrap: wrap;
     margin-top: 40px;
 }
+
+@media (max-width: 470px) {
+    .FootballList {
+        justify-content: center;
+    }
+}
