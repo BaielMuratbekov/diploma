@@ -17,7 +17,6 @@ function AuthForm() {
         email: formData.get("email"),
         password: formData.get("password"),
         method: event.nativeEvent.submitter.innerText === "Sign up" ? 'signup' : 'signin',
-        
       })
     );
     navigate('/');

@@ -9,7 +9,7 @@ import HeaderCart from "../components/Header/HeaderCart/HeaderCart";
 import classes from "../components/Header/HeaderCart/HeaderCart.module.css";
 import  {increment, decrement, remove } from "../redux/cartSlice";
 function Cart() {
-  const items = useSelector((store) => store.cart.itemsInCart);
+  const items = useSelector(store => store.cart.items);
   const dispatch = useDispatch();
   const products = getProducts();
 

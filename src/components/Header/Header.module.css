@@ -14,11 +14,9 @@
 .Header__left h1,p{
     max-width: 400px;
 }
-.Header img{
+.Header__right img{
     border-radius: 25px;
     max-width: 600px;
-    min-width: 400px;
-    max-height: 400px;
     overflow: hidden;
     object-fit: cover;
     object-position: center;
@@ -30,7 +28,31 @@
         padding: 20px;
 
     }
+    .Header__right img{
+        max-width: 450px;
+    }
+
     .Header__left {
         margin-top: 20px;
     }
+    
+    .Header__left h1,p{
+        max-width: 300px;
+    }
+}
+@media (max-width: 580px) {
+ 
+    .Header__right img{
+        max-width: 350px;
+    }
+}
+@media (max-width: 380px) {
+ 
+    .Header__right img{
+        max-width: 280px;
+    }
+    .Header__left h1,p{
+        max-width: 200px;
+    }
+
 }

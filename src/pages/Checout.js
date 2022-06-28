@@ -12,7 +12,7 @@ function Checkout() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { items, localId } = useSelector(store => ({
-    items: store.cart.itemsInCart,
+    items: store.cart.items,
     localId: store.auth.localId
   }));
 

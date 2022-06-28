@@ -12,41 +12,43 @@ export const checkout = createAsyncThunk(
     return response.data;
   }
 );
-
 const cartSlice = createSlice({
   name: "cart",
   initialState: {
-    itemsInCart: JSON.parse(localStorage.getItem('cartItemsInCart') ?? '{}'),
+    items: JSON.parse(localStorage.getItem('cartItems') ?? '{}'),
   },
   reducers: {
     add: (store, action) => {
-      if (store.itemsInCart[action.payload]) {
-        store.itemsInCart[action.payload]++;
-      } else {
-        store.itemsInCart[action.payload] = 1;
+      if (store.items[action.payload]) {
+        store.items[action.payload]++;
+      }
+      else {
+        store.items[action.payload] = 1;
       }
     },
     remove: (store, action) => {
-      delete store.itemsInCart[action.payload];
+      delete store.items[action.payload];
     },
     increment: (store, action) => {
-      store.itemsInCart[action.payload]++;
+      store.items[action.payload]++;
     },
     decrement: (store, action) => {
-      if (store.itemsInCart[action.payload] > 1) {
-        store.itemsInCart[action.payload]--;
-      } else {
-        delete store.itemsInCart[action.payload];
+      if (store.items[action.payload] > 1) {
+        store.items[action.payload]--;
       }
-    },
-    
+      else {
+        delete store.items[action.payload];
+      }
+    }
   },
   extraReducers: {
     [checkout.fulfilled]: (state, action) => {
       console.log(action);
-      state.itemsInCart = {};
-    },
-  },
+      state.items = {};
+    }
+  }
 });
+
 export const { add, remove, increment, decrement } = cartSlice.actions;
+
 export default cartSlice.reducer;

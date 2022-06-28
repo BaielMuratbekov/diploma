@@ -8,9 +8,8 @@ export const store = configureStore({
   },
 });
 store.subscribe(() => {
-  localStorage.setItem(
-    "cartItems",
-    JSON.stringify(store.getState().cart.itemsInCart)
-  );
+  localStorage.setItem('cartItems', JSON.stringify(
+    store.getState().cart.items
+  ));
   console.log(store.getState().auth);
 });
