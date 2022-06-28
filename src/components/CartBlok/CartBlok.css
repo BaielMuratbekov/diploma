@@ -14,6 +14,7 @@
 .cart-icon {
     cursor: pointer;
     position: relative;
+    margin-left: 10px;
 }
 .cart-icon:hover{       
     color: #fc7e00;

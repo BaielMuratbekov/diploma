@@ -1,13 +1,15 @@
 import classes from "./AuthForm.module.css";
 import { FaUserAlt } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { start } from "../../redux/authSlice";
 import { useNavigate } from "react-router-dom";
 
 function AuthForm() {
   const dispatch = useDispatch();
+  const { error, localId } = useSelector((store) => store.auth);
   const navigate = useNavigate();
+
   function onAuthStart(event) {
     event.preventDefault();
 
@@ -16,15 +18,26 @@ function AuthForm() {
       start({
         email: formData.get("email"),
         password: formData.get("password"),
-        method: event.nativeEvent.submitter.innerText === "Sign up" ? 'signup' : 'signin',
-        
+        method:
+          event.nativeEvent.submitter.innerText === "Sign up"
+            ? "signup"
+            : "signin",
       })
     );
-    navigate('/');
+  }
+
+  if (localId !== null) {
+    navigate("/");
+  }
+
+  let errorOutput = null;
+  if (error) {
+    errorOutput = <strong style={{ color: "red" }}>{error}</strong>;
   }
   return (
-    <div className={classes.Auth}>
-      <form onSubmit={onAuthStart} className={classes.AuthForm}>
+    <form onSubmit={onAuthStart}>
+      {errorOutput}
+      <div className={classes.AuthForm}>
         <h3>Entrance</h3>
         <p>Use a Google Account</p>
         <label>
@@ -44,8 +57,8 @@ function AuthForm() {
           <button>Sign in</button>
           <button>Sign up</button>
         </div>
-      </form>
-    </div>
+      </div>
+    </form>
   );
 }
 

@@ -1,25 +1,19 @@
-.Auth {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-.Auth p{
-    margin-bottom: 20px;
-}
 .AuthForm {
     display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 2rem 0;
     flex-direction: column;
 }
-
-.AuthForm button {
-    background-color: crimson;
-    color: white;
+.AuthForm p{
+    margin-bottom: 20px;
 }
-
-.AuthForm label {
+.AuthForm .btn {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
+
 
 .AuthForm input {
     border: none;
@@ -37,32 +31,30 @@
     height: 50px;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
 }
 
-.AuthForm .btn {
-    
-    text-align: end;
-       
-}
-.AuthForm button{
+.AuthForm button {
     padding: 10px 15px;
     border-radius: 10px;
     font-size: 16px;
-    display: inline-block;
-    text-transform: uppercase;
     font-weight: 600;
     margin-left: 10px;
+    background-color: crimson;
+    color: white;
 }
-.AuthForm button:hover{
+
+.AuthForm button:hover {
     background-color: rgb(149, 17, 43);
 }
+
 @media (max-width: 450px) {
-    .AuthForm input{
+    .AuthForm input {
         width: 200px;
     }
-    .AuthForm button{
+
+    .AuthForm button {
         padding: 5px 10px;
         margin-left: 5px;
     }

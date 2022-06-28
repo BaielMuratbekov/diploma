@@ -5,7 +5,7 @@ export const Header = ({ image, title, children }) => {
     <header className={classes.Header}>
       <section className={classes.Header__left}>
         <h1>{title}</h1>
-        <p>{children}</p>
+        <div>{children}</div>
       </section>
       <div className={classes.Header__right}>
         <img src={image} alt={title} />
