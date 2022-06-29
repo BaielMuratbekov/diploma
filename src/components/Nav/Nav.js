@@ -8,7 +8,6 @@ export const Nav = () => {
         <NavItem url="/">Home</NavItem>
         <NavItem url="/abouts">About Store</NavItem>
         <NavItem url="/player">Players</NavItem>
-        <NavItem url="/sale">Sale UP To -50%</NavItem>
         
       </ul>
     </div>
