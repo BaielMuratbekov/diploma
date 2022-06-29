@@ -7,9 +7,9 @@ import { IoBagCheckOutline } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
 import HeaderCart from "../components/Header/HeaderCart/HeaderCart";
 import classes from "../components/Header/HeaderCart/HeaderCart.module.css";
-import  {increment, decrement, remove } from "../redux/cartSlice";
+import { increment, decrement, remove } from "../redux/cartSlice";
 function Cart() {
-  const items = useSelector(store => store.cart.items);
+  const items = useSelector((store) => store.cart.items);
   const dispatch = useDispatch();
   const products = getProducts();
 
@@ -41,11 +41,7 @@ function Cart() {
 
             <div className={classes.HeaderCart__checkout}>
               {product.price * items[product.productId]} сом{" "}
-              <Link to="/checkout">
-                <IoBagCheckOutline size={23} />
-              </Link>
             </div>
-            <div></div>
           </div>
         </div>
       );
@@ -58,10 +54,12 @@ function Cart() {
   return (
     <>
       <HeaderCart title="Your Shopping Cart">{output}</HeaderCart>
-
-      <div>
-        <hr />
+      <hr />
+      <div className="m-left-30">
         Total: {total} сом
+        <Link to="/checkout" className="m-left-30">
+          <IoBagCheckOutline size={30} />
+        </Link> 
       </div>
     </>
   );
