@@ -36,7 +36,7 @@
     }
 
     .Header__right img{
-        max-width: 450px;
+        max-width: 400px;
     }
 
     .Header__left {
@@ -51,7 +51,7 @@
 @media (max-width: 580px) {
 
     .Header__right img {
-        max-width: 350px;
+        max-width: 300px;
     }
 }
 
