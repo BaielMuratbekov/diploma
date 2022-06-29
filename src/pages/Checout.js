@@ -52,7 +52,7 @@ function Checkout() {
 
   return (
     <>
-      <Header title="Checkout" image="/assets/about3.webp">
+      <Header title="Checkout" image="/assets/checkout.webp">
         Please enter your information.
       </Header>
       {output}

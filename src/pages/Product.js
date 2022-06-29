@@ -13,7 +13,7 @@ function Product() {
   return (
     <>
       <Header title={product.title} image={product.image}>
-        {product.description}
+        <p>{product.description}</p>
         <FootballByu productId={params.productId} />
       </Header>
       

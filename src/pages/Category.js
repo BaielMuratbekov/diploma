@@ -16,7 +16,7 @@ function Category() {
     <div>
       <>
         <Header image={category.headerimage} title={category.title}>
-          {category.description}
+          <p>{category.description}</p>
         </Header>
       </>
       <div className="container">
