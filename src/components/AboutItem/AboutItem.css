@@ -1,8 +1,3 @@
 .AboutItem{
     text-align: center ;
 }
-.AboutItem span{
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0;
-}

@@ -11,7 +11,7 @@
     text-align: center;
 
 }
-.Header__left h1,p{
+.Header__left h1{
     max-width: 400px;
 }
 .Header__right img{
@@ -36,7 +36,7 @@
         margin-top: 20px;
     }
     
-    .Header__left h1,p{
+    .Header__left h1{
         max-width: 300px;
     }
 }
@@ -51,7 +51,7 @@
     .Header__right img{
         max-width: 280px;
     }
-    .Header__left h1,p{
+    .Header__left h1{
         max-width: 200px;
     }
 
