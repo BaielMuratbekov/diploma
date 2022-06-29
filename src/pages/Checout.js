@@ -11,14 +11,14 @@ import { useEffect } from "react";
 function Checkout() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { items, localId } = useSelector(store => ({
+  const { items, localId } = useSelector((store) => ({
     items: store.cart.items,
-    localId: store.auth.localId
+    localId: store.auth.localId,
   }));
 
   useEffect(() => {
     if (!localId) {
-      navigate('/auth');
+      navigate("/auth");
     }
   }, [localId, navigate]);
   const products = getProducts();
@@ -27,19 +27,20 @@ function Checkout() {
   let output = products
     .filter((product) => items[product.productId])
     .map((product) => {
+      
       total += product.price * items[product.productId];
 
       return (
         <div>
-          <Link to="">{product.title}</Link> | {items[product.productId]} | 
-            {product.price * items[product.productId]} сом
+          <Link to="">{product.title}</Link> | {items[product.productId]} |
+          {product.price * items[product.productId]} сом
         </div>
       );
     });
 
-    if (!output) {
-      output = "No items in the cart.";
-    }
+  if (!output) {
+    output = "No items in the cart.";
+  }
 
   function onCheckout(event) {
     event.preventDefault();
@@ -55,19 +56,28 @@ function Checkout() {
       <Header title="Checkout" image="/assets/checkout.webp">
         Please enter your information.
       </Header>
-      {output}
-        <hr />
-        Total: {total}сом
+      <div className="Checkout__total">{output}</div>
+      <hr />
+      <div className="Checkout__total">Total: {total}сом </div>
       <div className={classes.Auth}>
-        
         <form onSubmit={onCheckout} className={classes.AuthForm}>
           <label>
             <FaUserAlt className={classes.AuthForm__icon} />
-            <input type="text" name="firstName" required placeholder="First name" />
+            <input
+              type="text"
+              name="firstName"
+              required
+              placeholder="First name"
+            />
           </label>
           <label>
             <FaUserAlt className={classes.AuthForm__icon} />
-            <input type="text" name="lastName" required placeholder="Last name" />
+            <input
+              type="text"
+              name="lastName"
+              required
+              placeholder="Last name"
+            />
           </label>
           <label>
             <AiFillHome className={classes.AuthForm__icon} />

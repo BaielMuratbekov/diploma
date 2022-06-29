@@ -55,10 +55,10 @@ function Cart() {
     <>
       <HeaderCart title="Your Shopping Cart">{output}</HeaderCart>
       <hr />
-      <div className="m-left-30">
+      <div className="m-left-30 total">
         Total: {total} сом
         <Link to="/checkout" className="m-left-30">
-          <IoBagCheckOutline size={30} />
+          <IoBagCheckOutline size={50} />
         </Link> 
       </div>
     </>
