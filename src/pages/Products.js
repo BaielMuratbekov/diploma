@@ -1,13 +1,13 @@
 import FootballList from "../components/Football/FootballList/FootballList";
 import { Header } from "../components/Header/Header";
 import { getProducts } from "../data/products";
-
+import ProductsImg from '../assets/about3.webp'
 
 function Products() {
   return (
     <div>
       <>
-        <Header title="All Products!" image="/asstes/about.jpg">
+        <Header title="All Products!" image={ProductsImg}>
         <p>
             A football is a ball inflated with air that is used to play one of
             the various sports known as football. In these games, with some

@@ -8,6 +8,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 import classes from "../components/AuthForm/AuthForm.module.css";
 import { useEffect } from "react";
+import CheckoutImg from '../assets/checkout.webp'
 function Checkout() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -53,7 +54,7 @@ function Checkout() {
 
   return (
     <>
-      <Header title="Checkout" image="/assets/checkout.webp">
+      <Header title="Checkout" image={CheckoutImg}>
         Please enter your information.
       </Header>
       <div className="Checkout__total">{output}</div>

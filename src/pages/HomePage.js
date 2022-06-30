@@ -5,6 +5,7 @@ import { Header } from "../components/Header/Header";
 import { PlayersHeader } from "../components/PlayersHeader/PlayersHeader";
 import { getCategories } from "../data/categories";
 import { getProducts } from "../data/products";
+import HeaderImg from '../assets/aboutfootball.jpg'
 export const HomePage = () => {
   return (
     <div className="Home-page">
@@ -13,7 +14,7 @@ export const HomePage = () => {
       <>
         <Header
           title="Welcome to our football store!"
-          image="/assets/aboutfootball.jpg"
+          image={HeaderImg}
         >
           <p>Football is a family of team sports that involve, to varying degrees,
           kicking a ball to score a goal. Unqualified, the word football

@@ -1,10 +1,10 @@
 import { AboutItem } from "../components/AboutItem/AboutItem";
 import { Header } from "../components/Header/Header";
-
+import  AboutImg from "../assets/about3.webp";
 function Abouts() {
   return (
     <div>
-      <Header title="About store" image="/assets/about3.webp">
+      <Header title="About store" image={AboutImg}>
         <div>
           <div>Sportswear store</div>
           <div>
@@ -19,7 +19,7 @@ function Abouts() {
           </div>
         </div>
       </Header>
-      <AboutItem/>
+      <AboutItem />
     </div>
   );
 }

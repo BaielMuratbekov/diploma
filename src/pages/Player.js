@@ -1,18 +1,19 @@
 import React from "react";
 import { Header } from "../components/Header/Header";
-
+import PlayerImg from '../assets/players.webp'
 export const Player = () => {
   return (
     <div>
       <>
-        <Header title="Players" image="/assets/players.webp">
+        <Header title="Players" image={PlayerImg}>
           <p>
-            A coffee bean is a seed of the Coffea plant and the source for
-            coffee. It is the pip inside the red or purple fruit often referred
-            to as a cherry. Just like ordinary cherries, the coffee fruit is
-            also a so-called stone fruit. Even though the coffee beans are not
-            technically beans, they are referred to as such because of their
-            resemblance to true beans.
+            A football player or footballer is a sportsperson who plays one of
+            the different types of football. The main types of football are
+            association football, American football, Canadian football,
+            Australian rules football, Gaelic football, rugby league and rugby
+            union. It has been estimated that there are 250 million association
+            football players in the world,[1] and many play the other forms of
+            football.
           </p>
         </Header>
       </>

@@ -1,10 +1,10 @@
-
+import NotFoundImg from '../assets/error-404.jpg'
 
 
 function NotFound() {
     return (
        <section>
-           <img src="/assets/error-404.jpg" alt="not found"/>
+           <img src={NotFoundImg} alt="not found"/>
        </section>
     );
 }
