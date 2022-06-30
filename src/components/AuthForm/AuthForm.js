@@ -32,7 +32,7 @@ function AuthForm() {
 
   let errorOutput = null;
   if (error) {
-    errorOutput = <strong style={{ color: "red" }}>{error}</strong>;
+    errorOutput = <strong className={classes.AuthForm} style={{ color: "red"}}>{error}</strong>;
   }
   return (
     <form onSubmit={onAuthStart}>
