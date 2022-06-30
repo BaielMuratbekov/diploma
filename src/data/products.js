@@ -9,6 +9,7 @@ import france from "../assets/france.webp";
 import psg from "../assets/psg.jpg";
 import monaco from "../assets/as-monaco.jpg";
 import brazil from "../assets/brazil.jpg";
+import borussia from "../assets/bvb-20-21-home-kit-2.jpg"
 const products = [
   {
     image: Realmadrid,
@@ -74,7 +75,7 @@ const products = [
       "Fußball-Club Bayern München e. V. (FCB, pronounced [ˈfuːsbalˌklʊp ˈbaɪɐn ˈmʏnçn̩] (listen)), also known as FC Bayern (pronounced [ˌɛft͡seː ˈbaɪɐn] (listen)) or Bayern Munich, is a German professional sports club based in Munich, Bavaria. It is best known for its professional football team, which plays in the Bundesliga, the top tier of the German football league system. Bayern is the most successful club in German football history, having won a record 32 national titles, including 10 consecutively since 2013, and 20 national cups, along with numerous European honours.",
   },
   {
-    image: "/assets/bvb-20-21-home-kit-2.jpg",
+    image: borussia,
     title: "Borussia",
     price: 1900,
     productId: "borussia",
