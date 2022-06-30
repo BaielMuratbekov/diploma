@@ -1,0 +1,60 @@
+.MainHeader {
+    width: 100%;
+    margin-top: 3rem;
+    padding: 30px;
+    background-color: #08051e;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.MainHeader__right h1 {
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.MainHeader__right{
+    text-align: center;
+}
+.MainHeader__right h1,
+p {
+    max-width: 400px;
+}
+.MainHeader__right p{
+    margin-top: 20px;
+    font-style: 1.2rem;
+}
+.MainHeader__right button{
+    background-color: crimson;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 50px;
+}
+
+.MainHeader__left  img {
+    max-width: 600px;
+    min-height: 300px;
+    height: 50vh;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 10px;
+    object-position: center;
+    border: 5px solid crimson;
+}
+
+@media (max-width: 680px) {
+    .MainHeader {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+
+    }
+    .MainHeader__right{
+        margin-top: 30px;
+    }
+}

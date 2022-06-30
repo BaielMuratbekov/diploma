@@ -1,6 +1,8 @@
 import React from "react";
 import { Header } from "../components/Header/Header";
 import PlayerImg from '../assets/players.webp'
+import MainHeader from "../components/MainHeader/MainHeader";
+import MainPlayerImg from '../assets/players.jpg'
 export const Player = () => {
   return (
     <div>
@@ -16,6 +18,9 @@ export const Player = () => {
             football.
           </p>
         </Header>
+        <MainHeader title="Buy now" image={MainPlayerImg}>
+        <p>Your favorite player</p>
+      </MainHeader>
       </>
     </div>
   );
